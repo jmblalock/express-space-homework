@@ -8,13 +8,9 @@
 <body>
     <h1>Missions Index Page</h1>
 
-    <ul>
+    <ul class="missions">
         <% for (let i = 0; i < missions.length; i++) { %>
-          <li style="margin-bottom: 20px;">
-            <a href="/missions/<%= i %>">
-              <%= missions[i].name %>
-            </a>    
-          </li>
+          <li style="margin-bottom: 20px;"><a href="/missions/<%= i %>"><%= missions[i].name %></a></li>
         <% } %>
       </ul>
 </body>
