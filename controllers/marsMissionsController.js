@@ -24,7 +24,13 @@ router.get('/:missionIndex', (req, res) => {
       });
     } else {
       res.render('missions/showMissions', {
-        mission: {name: 'Does not exist'},
+        mission: {
+            name: 'Does not exist',
+            launchDate: 'Does not exist',
+            operator: 'Does not exist',
+            missionType: 'Does not exist',
+            img: 'Does not exist'
+        },
       });
     }
   });
