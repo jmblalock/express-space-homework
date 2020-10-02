@@ -28,6 +28,9 @@ app.set('view engine', 'ejs');
 const missionsCtrl = require('./controllers/marsMissionsController');
 const missions = require('./models/marsMissions');
 
+//Middleware
+app.use(express.static('public'));
+
 // INDEX Route
 // send data to 'missions/index.ejs' view
 // the view should display just the names of each mission
